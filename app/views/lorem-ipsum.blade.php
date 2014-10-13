@@ -11,6 +11,9 @@
 		'url' => 'lorem-ipsum'
 	)) }}
 
+		{{ Form::label('paragraphs', 'How many paragraphs?') }}
+    	{{ Form::text('paragraphs', '1') }}
+
 		{{ Form::submit('Submit') }}
 
 	{{ Form::close() }}

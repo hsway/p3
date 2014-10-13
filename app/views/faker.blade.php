@@ -11,6 +11,9 @@
 		'url' => 'faker'
 	)) }}
 
+		{{ Form::label('numUsers', 'How many users?') }}
+    	{{ Form::text('numUsers', '1') }}
+
 		{{ Form::submit('Submit') }}
 
 	{{ Form::close() }}

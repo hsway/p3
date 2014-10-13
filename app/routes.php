@@ -23,7 +23,9 @@ Route::get('/lorem-ipsum', function()
 
 Route::post('/lorem-ipsum', function()
 {
-	return 'process the form to generate lorem ipsum';
+	$paragraphs = Input::get('paragraphs');
+    return View::make('lorem-ipsum-result')
+    	->with('paragraphs', $paragraphs);
 });
 
 Route::get('/faker', function()
@@ -33,5 +35,7 @@ Route::get('/faker', function()
 
 Route::post('/faker', function()
 {
-	return 'process the form to generate random users';
+	$numUsers = Input::get('numUsers');
+    return View::make('faker-result')
+    	->with('numUsers', $numUsers);
 });

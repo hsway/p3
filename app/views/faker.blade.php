@@ -4,8 +4,19 @@
 	Random User Generator
 @stop
 
+@section('bodyid')
+	"faker"
+@stop
+
+@section('pagehead')
+	Random User Fabrication
+@stop
+
+@section('subhead')
+	Use the form below to fabricate some random users for your application.
+@stop
+
 @section('content')
-	<h1>Random User Generator</h1>
 
 	{{ Form::open(array(
 		'url' => 'faker'

@@ -25,7 +25,9 @@
 	)) }}
 
 		{{ Form::label('paragraphs', 'How many paragraphs?') }}
-    	{{ Form::text('paragraphs', '1') }}
+    	{{ Form::text('paragraphs', '1', array(
+    		'maxlength' => 1
+    	)) }}
 
     	<br /><br />
 

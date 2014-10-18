@@ -4,10 +4,12 @@
 
 	<h2>Here's your text:</h2>
 
+	<p>
 	<?php
 		$generator = new Badcow\LoremIpsum\Generator();
 		$text = $generator->getParagraphs($paragraphs);
-		echo implode('<p>', $text);
+		echo implode('</p><p>', $text);
 	?>
+	</p>
 
 @stop

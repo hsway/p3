@@ -24,6 +24,11 @@ Route::get('/lorem-ipsum', function()
 Route::post('/lorem-ipsum', function()
 {
 	$paragraphs = Input::get('paragraphs');
+
+	if (!is_numeric($paragraphs) || $paragraphs == 0) {
+		$paragraphs = 1;
+	}
+
     return View::make('lorem-ipsum-result')
     	->with('paragraphs', $paragraphs);
 });
@@ -36,6 +41,18 @@ Route::get('/faker', function()
 Route::post('/faker', function()
 {
 	$numUsers = Input::get('numUsers');
-    return View::make('faker-result')
-    	->with('numUsers', $numUsers);
+
+	if (!is_numeric($numUsers) || $numUsers <=0) {
+		$numUsers = 1;
+	}
+
+	$address = Input::get('address');
+	$birthday = Input::get('birthday');
+	$blurb = Input::get('blurb');
+    return View::make('faker-result', array(
+    		'numUsers' => $numUsers,
+    		'address' => $address,
+    		'birthday' => $birthday,
+    		'blurb' => $blurb
+    	));
 });

@@ -1,6 +1,8 @@
 @extends('faker')
 
-@section('result')
+@section('belowfold')
+
+	<h2>Here they are:</h2>
 
 	<?php
 		$faker = Faker\Factory::create();

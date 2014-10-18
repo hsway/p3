@@ -16,7 +16,9 @@
 	Use the form below to fabricate some random users for your application.
 @stop
 
-@section('content')
+@section('form')
+
+	<br />
 
 	{{ Form::open(array(
 		'url' => 'faker'
@@ -25,7 +27,11 @@
 		{{ Form::label('numUsers', 'How many users?') }}
     	{{ Form::text('numUsers', '1') }}
 
-		{{ Form::submit('Submit') }}
+    	<br /><br />
+
+		{{ Form::submit('Get your users!', 
+			array('class' => 'btn btn-success'
+		)) }}
 
 	{{ Form::close() }}
 @stop

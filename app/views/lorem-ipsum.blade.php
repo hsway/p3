@@ -16,7 +16,9 @@
 	Use the form below to generate some lorem ipsum.
 @stop
 
-@section('content')
+@section('form')
+
+	<br />
 
 	{{ Form::open(array(
 		'url' => 'lorem-ipsum'
@@ -25,7 +27,11 @@
 		{{ Form::label('paragraphs', 'How many paragraphs?') }}
     	{{ Form::text('paragraphs', '1') }}
 
-		{{ Form::submit('Submit') }}
+    	<br /><br />
+
+		{{ Form::submit('Get your text!', 
+			array('class' => 'btn btn-success'
+		)) }}
 
 	{{ Form::close() }}
 @stop

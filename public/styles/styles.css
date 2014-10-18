@@ -1,7 +1,60 @@
+body {
+	margin-bottom: 40px;
+}
+
 #nav-far-left {
-	color:orange;
+	color: orange;
+}
+
+#nav-far-left:hover {
+	color: white;
 }
 
 .jumbotron {
 	margin-top: 5em;
+}
+
+.jumbotron form {
+	text-align: center;
+}
+
+#homebuttons {
+	text-align: center;
+}
+
+#homebuttons a {
+	margin: .5em;
+}
+
+#paragraphs, #numUsers {
+	width: 40px;
+}
+
+/* Sticky footer styles below, modified from 
+http://getbootstrap.com/examples/sticky-footer/sticky-footer.css
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #f5f5f5;
+}
+footer .container {
+  width: auto;
+  /* max-width: 680px; */
+  padding: 0 15px;
+}
+footer .container .text-muted {
+  margin: 10px 0;
+  font-size: small;
+}
+footer .container .text-muted a {
+  color: #999999;
+  text-decoration: underline;
 }

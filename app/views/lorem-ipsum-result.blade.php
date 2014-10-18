@@ -1,6 +1,8 @@
 @extends('lorem-ipsum')
 
-@section('result')
+@section('belowfold')
+
+	<h2>Here's your text:</h2>
 
 	<?php
 		$generator = new Badcow\LoremIpsum\Generator();

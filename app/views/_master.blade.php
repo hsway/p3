@@ -19,6 +19,7 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <link rel="shortcut icon" href="ico/favicon.ico">
   </head>
   <body id=@yield('bodyid')>
 
@@ -47,10 +48,19 @@
       <div class="jumbotron">
         <h1>@yield('pagehead')</h1>
         <p>@yield('subhead')</p>
+        @yield('form')
       </div>
-      @yield('content')
-      @yield('result')
+      @yield('belowfold')
     </div>
+
+    <footer>
+        <div class="container">
+            <p class="text-muted">
+              <span class="glyphicon glyphicon-copyright-mark"></span> 2014 Hank Sway&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/hsway/p3" target="_blank">View source @GitHub</a>
+            </p>
+        </div>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

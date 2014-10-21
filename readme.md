@@ -10,7 +10,7 @@ This site presents two handy tools for developers. The first is a generator of l
 <http://screencast.com/t/mFb8Dq34D9u1>
 
 ## Details for teaching team
-I forgot to mention this in my demo, but I am pleased with the responsive navbar. Pretty easy to do with Bootstrap
+I forgot to mention this in my demo, but I am pleased with the responsive navbar. Pretty easy to do with Bootstrap.
 
 ## Outside code
 * Bootstrap: <http://getbootstrap.com/>

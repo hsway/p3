@@ -40,10 +40,10 @@ Route::post('/lorem-ipsum', function()
 		));
 	}
 
-	if ($paragraphs == 0) {
+	if ($paragraphs <= 0) {
 		return View::make('lorem-ipsum-error', array(
 			'paragraphs' => '',
-			'error' => 'Input cannot be 0.'
+			'error' => 'Input cannot be <= 0.'
 		));
 	}
 

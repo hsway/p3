@@ -12,6 +12,10 @@ This site presents two handy tools for developers. The first is a generator of l
 ## Details for teaching team
 I forgot to mention this in my demo, but I am pleased with the responsive navbar. Pretty easy to do with Bootstrap.
 
+I mentioned in my demo that I'd like to add persistent form selections. I was able to do this before the due date.
+
+I also added more advanced input validation after recording my demo. Error messages now display on screen, rather than the application simply suppling a default value when the user entered an erroneous one.
+
 ## Outside code
 * Bootstrap: <http://getbootstrap.com/>
 * Lorem-Ipsum: <https://packagist.org/packages/badcow/lorem-ipsum>

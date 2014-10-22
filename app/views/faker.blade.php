@@ -25,22 +25,24 @@
 	)) }}
 
 		{{ Form::label('numUsers', 'How many users?') }}
-    	{{ Form::text('numUsers', '1', array(
+    	{{ Form::text('numUsers', $numUsers, array(
     		'maxlength' => 2
-    	)) }}
+    	)) }} (max = 99)
 
     	<br />
 
     	{{ Form::label('address', 'Include address?') }}
-    	{{ Form::checkbox('address', '1'); }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    	<input type="checkbox" id="address" name="address" value="1" {{ ($address) ? 'checked="checked"' : '' }} >
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
     	{{ Form::label('birthday', 'Include birthday?') }}
-    	{{ Form::checkbox('birthday', '1'); }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    	<input type="checkbox" id="birthday" name="birthday" value="1" {{ ($birthday) ? 'checked="checked"' : '' }} >
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
     	{{ Form::label('blurb', 'Include profile blurb?') }}
-    	{{ Form::checkbox('blurb', '1'); }}
+    	<input type="checkbox" id="blurb" name="blurb" value="1" {{ ($blurb) ? 'checked="checked"' : '' }} >
 
     	<br /><br />
 

@@ -47,6 +47,13 @@ Route::post('/lorem-ipsum', function()
 		));
 	}
 
+	if ($paragraphs > 9) {
+		return View::make('lorem-ipsum-error', array(
+			'paragraphs' => '',
+			'error' => 'Input cannot be >9.'
+		));
+	}
+
     return View::make('lorem-ipsum-result')
     	->with('paragraphs', $paragraphs);
 });
@@ -91,6 +98,16 @@ Route::post('/faker', function()
 	if ($numUsers <=0) {
 		return View::make('faker-error', array(
 			'error' => 'Input cannot be <= 0.',
+			'numUsers' => '',
+			'address' => $address,
+			'birthday' => $birthday,
+			'blurb' => $blurb
+		));
+	}
+
+	if ($numUsers > 99) {
+		return View::make('faker-error', array(
+			'error' => 'Input cannot be >99.',
 			'numUsers' => '',
 			'address' => $address,
 			'birthday' => $birthday,
